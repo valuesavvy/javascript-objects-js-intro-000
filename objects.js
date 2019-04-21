@@ -90,8 +90,34 @@ function goer(targetObject, updateObject) {
   return Object.assign({}, targetObject, updateObject)
 }
 
+var meals = { 
+  breakfast: "oatmeal",
+  lunch: "turkey sandwich",
+  dinner: "steak and potatoes"
+};
+
+delete meals.dinner;
 
 
+var meals = {
+  breakfast: "oatmeal",
+  lunck: "turkey sandwich",
+  dinner: "steak and potatoes"
+  
+};
+
+meals.breakfast = ["oatmeal", "banana"];
+
+var meals = {
+  breakfast: "oatmeal",
+  lunck: "turkey sandwich",
+  dinner: "steak and potatoes"
+  
+};
+
+Object.assign ({}, meals, {
+  breakfast: ['oatmeal', 'banana']
+})
 
 
 
